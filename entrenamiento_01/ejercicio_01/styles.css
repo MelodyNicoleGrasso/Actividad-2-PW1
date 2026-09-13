@@ -1,0 +1,94 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.datos-personales {
+    width: 60%;
+}
+
+.mujer_cv {
+    width: 25%;
+}
+
+.mujer_cv img {
+    width: 100%;
+    border: 0.1em solid black;
+    border-radius: 10%;
+}
+
+.experiencia-laboral {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.estudios {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+}
+.detalle {
+    width: 80%;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+.detalle h1 {
+    margin-top: 0;
+}
+.detalle h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.detalle p,
+.detalle li {
+    line-height: 1.4;
+}
+.detalle img {
+    width: 40%;
+    border: 0.1em solid black;
+    border-radius: 5%;
+}
+
+.detalle iframe {
+    width: 100%;
+    height: 35vh;
+    border: 0.1em solid black;
+}
+
+.detalle a {
+    display: inline-block;
+    margin-top: 3%;
+    color: black;
+}

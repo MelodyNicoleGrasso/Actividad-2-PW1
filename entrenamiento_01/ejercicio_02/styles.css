@@ -1,0 +1,145 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+
+    position: fixed;
+    top: 0;
+    left: 10%;
+
+    background-color: #cdb4db;
+    border: 0.1em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    height: 80vh;
+
+    margin: 10vh auto;
+
+    padding: 3%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+
+footer {
+    width: 80%;
+    height: 10vh;
+
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+
+    background-color: #cdb4db;
+    border: 0.1em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+footer p {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+article {
+    width: 80%;
+    margin: 5% auto;
+    padding: 4%;
+
+    background-color: white;
+
+    border: 0.1em solid black;
+    border-radius: 5%;
+
+    box-sizing: border-box;
+}
+
+article img {
+    display: block;
+
+    width: 40%;
+
+    margin: 3% auto;
+
+    border-radius: 5%;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article h3 {
+    margin-top: 4%;
+}
+
+article ol {
+    padding-left: 6%;
+}
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+
+    background-color: white;
+
+    border: 0.1em solid black;
+    border-radius: 5%;
+
+    box-sizing: border-box;
+}
+
+form p {
+    margin-bottom: 4%;
+}
+
+label {
+    display: block;
+    margin-bottom: 1%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 2%;
+
+    border: 0.1em solid black;
+
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 20vh;
+}
+
+button {
+    padding: 2% 5%;
+    margin-right: 2%;
+}
