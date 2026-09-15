@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 0.05rem solid #000;
+}
+
+/* vista escritorio */
+.contenedor {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "c1 c2 c4"
+        "c1 c3 c4"
+        "c5 c5 c6";
+}
+
+.caja-1 {
+    grid-area: c1;
+    background-color: #d8e8d3;
+}
+
+.caja-2 {
+    grid-area: c2;
+    background-color: #fcf0cd;
+}
+
+.caja-3 {
+    grid-area: c3;
+    background-color: #fcf0cd;
+}
+
+.caja-4 {
+    grid-area: c4;
+    background-color: #d8e8d3;
+}
+
+.caja-5 {
+    grid-area: c5;
+    background-color: #f7cece;
+}
+
+.caja-6 {
+    grid-area: c6;
+    background-color: #d1e0fc;
+}
+
+/* vista tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contenedor {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: none;
+    }
+
+    .caja-1 { grid-area: auto; background-color: #d8e8d3; }
+    .caja-2 { grid-area: auto; background-color: #d8e8d3; }
+    .caja-3 { grid-area: auto; background-color: #fcf0cd; }
+    .caja-4 { grid-area: auto; background-color: #fcf0cd; }
+    .caja-5 { grid-area: auto; background-color: #f7cece; }
+    .caja-6 { grid-area: auto; background-color: #d1e0fc; }
+}
+
+/* vista mobile */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: none;
+    }
+
+    .caja {
+        font-size: 2.5rem;
+    }
+
+    .caja-1, .caja-2 {
+        grid-area: auto;
+        background-color: #d8e8d3;
+    }
+
+    .caja-3, .caja-4 {
+        grid-area: auto;
+        background-color: #fcf0cd;
+    }
+
+    .caja-5 {
+        grid-area: auto;
+        background-color: #d1e0fc;
+    }
+
+    .caja-6 {
+        grid-area: auto;
+        background-color: #f7cece;
+    }
+}

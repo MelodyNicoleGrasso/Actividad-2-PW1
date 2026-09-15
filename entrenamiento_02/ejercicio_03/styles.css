@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 0.05rem solid #000;
+}
+
+/* vista escritorio */
+.contenedor {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: repeat(3, 1fr);
+}
+.caja-1, .caja-2 {
+    background-color: #d8e8d3;
+}
+
+.caja-3, .caja-4 {
+    background-color: #fcf0cd;
+}
+
+.caja-5 {
+    background-color: #f7cece;
+}
+
+.caja-6 {
+    background-color: #d1e0fc;
+}
+
+
+/* vista mobile */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+   
+    .caja-2, 
+    .caja-4, 
+    .caja-5 {
+        display: none;
+    }
+
+    .caja {
+        font-size: 3rem;
+    }
+}
